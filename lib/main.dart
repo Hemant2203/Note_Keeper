@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepPurple, // Apply globally
         ),
       ),
-      home: NoteDetail(),
+      home: NoteList(),
     );
   }
 }
