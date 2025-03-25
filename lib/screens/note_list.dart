@@ -20,13 +20,12 @@ class NoteListState extends State<NoteList> {
   DatabaseHelper databaseHelper = DatabaseHelper();
   List<Note> noteList = [];
 
+  void initState(){
+    super.initState();
+    updateListView();
+  }
   @override
   Widget build(BuildContext context) {
-    if (noteList == null) {
-      noteList = [];
-
-      updateListView();
-    }
 
     // TODO: implement build
     return Scaffold(
